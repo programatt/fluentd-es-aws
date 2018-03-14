@@ -14,9 +14,9 @@
 
 .PHONY:	build push
 
-PREFIX = cheungpat
-IMAGE = fluentd-elasticsearch-aws
-TAG = 1.22
+PREFIX = 645708309175.dkr.ecr.us-east-2.amazonaws.com
+IMAGE = fluentd-aws-elasticsearch-k8s
+TAG = 1.3
 
 build:
 	docker build --pull -t $(PREFIX)/$(IMAGE):$(TAG) .
